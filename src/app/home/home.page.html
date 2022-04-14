@@ -1,0 +1,15 @@
+<h1 text-center = "Custo da viagem" ></h1>
+
+<label for="Preço da Gasosa" > Preço da gasolina </label>
+<input type="number" id="Gasolina"[(ngModel)]= "precoDaGasolina"> 
+
+<label for="Distancia do role" > Distancia da Viagem</label>
+<input type="km" id="Distancia"[(ngModel)] = "distanciaDaViagem" > 
+
+<label for="Consumo do carro" >  Comsumo do carro </label>
+<input type="km/h" id="Consumo"[(ngModel)] = "consumoDoCarro" > 
+
+<button class = "btn-primary mt-3" (click)= "calcularCustoDaViagem()">calcular</button>
+
+<h4>Gastos da Viagem:</h4>
+<h2>R${{custo}}</h2>
